@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#0E000000">
+
+    <!--<ImageView-->
+    <!--android:layout_width="22dp"-->
+    <!--android:layout_height="22dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:background="@drawable/editsearch" />-->
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextbackground" />
+
+    <EditText
+        android:id="@+id/edittext_include_title"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/editsearch"
+        android:hint="  请输入你要搜索的商品名称" />
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:background="@drawable/edittextbackground">-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+</RelativeLayout>

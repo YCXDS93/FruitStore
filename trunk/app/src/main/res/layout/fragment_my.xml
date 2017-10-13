@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@drawable/myback">
+        <!--登录-->
+        <ImageView
+            android:id="@+id/my_login"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/yuan"/>
+
+        <ImageView
+            android:id="@+id/userImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userImg"
+            android:gravity="center_horizontal"
+            android:textColor="#FFFFFF"/>
+
+        <!--indent 订单-->
+        <RelativeLayout
+            android:id="@+id/indent"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/mybackground"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/my_indent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="我的订单"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/all_indent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/dingdan"
+                    android:text="查看所有订单"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/gray_c4"></View>
+    <!--付款项 obligation待付款  drop_shipping待发货  wait待收货 drawback退款-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/obligation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/daifukuan"
+            android:gravity="center"
+            android:text="待付款"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/drop_shipping"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/daifukuan"
+            android:gravity="center"
+            android:text="待发货"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/wait"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/daifahuo"
+            android:gravity="center"
+            android:text="待收货"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/drawback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tuikuan"
+            android:gravity="center"
+            android:text="退款"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/gray_c4"></View>
+
+    <!--关注attention   修改密码change password  收货信息message-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/attention"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/wodeguanzhu"
+            android:gravity="center"
+            android:text="我的关注"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/change_password"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/xiugaimima"
+            android:gravity="center"
+            android:text="修改密码"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/shouhuoxinxi"
+            android:gravity="center"
+            android:text="收货信息"
+            android:textSize="13sp"/>
+    </LinearLayout>
+    <!--关于我们about_us 联系我们contact_us  用户设置options-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/about_us"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/guanyuwomen"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/contact_us"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/lianxiwomen"
+            android:gravity="center"
+            android:text="联系我们"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/options"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/yonghushezhi"
+            android:gravity="center"
+            android:text="用户设置"
+            android:textSize="13sp"/>
+    </LinearLayout>
+</LinearLayout>
